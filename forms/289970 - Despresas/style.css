@@ -1,0 +1,41 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  form{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 601px) {
+  form{
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media print {
+  fieldset#historico{
+    display: block;
+    position: relative;
+    page-break-inside:avoid;
+  }
+}
+#historico{
+  display: none;
+}
+
+.obs{
+  color:red;
+  size: 0.1rem;
+}
+
+legend{
+  font-weight: bold;
+}
+
+.adiciona{
+  height: 10%;
+}
